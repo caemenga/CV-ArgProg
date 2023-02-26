@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+header{
+    height: 200px;
+    width: 100%;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img{
+    height: 100px;
+    width: 100px;
+    float: right;
+    border-radius: 50%;
+}
+header h1{
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.contenedor{
+    height: 500px;  
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    row-gap: 10px;
+    
+
+}
+.subcontenedor{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 100%;
+    column-gap: 10px;
+}
+
+.experiencia{
+    background-color: blue;
+    /*
+    height: 150px;
+    width: 100%;
+    */
+}
+.habilidades{
+    background-color: red;
+    /*
+    height: 150px;
+    width: 100%;
+    */
+}
+.educacion{
+    background-color: green;
+    /*
+    height: 150px;
+    width: 100%;
+    */
+}
+footer{
+    height: 100px;
+    width: 100%;
+}
