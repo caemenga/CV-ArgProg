@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+body{
+    display: grid;
+    gap: 10px;
+}
 header{
     height: 200px;
     width: 100%;
@@ -22,10 +26,10 @@ header h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .contenedor{
-    height: 500px;  
+    height: 600px;  
     width: 100%;
     display: grid;
-    grid-template-rows: auto;
+    grid-template-rows: 3fr 2fr;
     row-gap: 10px;
     
 
@@ -39,11 +43,26 @@ header h1{
 
 .experiencia{
     background-color: blue;
+    display: flex;
+    flex-direction: column;
     /*
     height: 150px;
     width: 100%;
     */
 }
+th{
+    background-color: green;
+}
+td{
+    background-color: yellow;
+    height: 10px;
+    width: 100%;
+}
+table{
+    background-color: red;
+    height: 100%;
+}
+
 .habilidades{
     background-color: red;
     /*
@@ -51,12 +70,19 @@ header h1{
     width: 100%;
     */
 }
+.habilidades table{
+    height: auto;
+}
 .educacion{
     background-color: green;
     /*
     height: 150px;
     width: 100%;
     */
+}
+div h2{
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 0px 0px 10px;
 }
 footer{
     height: 100px;

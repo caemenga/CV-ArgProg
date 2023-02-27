@@ -1,0 +1,24 @@
+{
+    "habilidades": ["panificados", "cocina"],
+    "experiencia":[
+        {
+            "empresa": "Panaderia del sol",
+            "cargo": "panadero",
+            "periodo": "2020 / 2021",
+            "tareas": ["elaboracion de panificados", "pasteleria" ,"tareas de mantenimiento"]
+        },
+        {
+            "empresa": "El Jardiin",
+            "cargo": "sonido",
+            "perido": "2021 / 2022",
+            "tareas": ["Armado de sonido", "Etc" ,"otra cosa"]
+        },
+        {
+            "empresa": "globant",
+            "cargo": "programador",
+            "perido": "2023 / 2024",
+            "tareas": ["programacion", "Algo mas" ,"otra cosa mas", "otra cosa mas 4"]
+        }
+    ],
+    "educacion": "nada por ahora"
+}
