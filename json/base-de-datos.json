@@ -1,5 +1,5 @@
 {
-    "habilidades": ["panificados", "cocina"],
+    "habilidades": ["panificados", "cocina", "limpieza"],
     "experiencia":[
         {
             "empresa": "Panaderia del sol",
@@ -10,13 +10,13 @@
         {
             "empresa": "El Jardiin",
             "cargo": "sonido",
-            "perido": "2021 / 2022",
+            "periodo": "2021 / 2022",
             "tareas": ["Armado de sonido", "Etc" ,"otra cosa"]
         },
         {
             "empresa": "globant",
             "cargo": "programador",
-            "perido": "2023 / 2024",
+            "periodo": "2023 / 2024",
             "tareas": ["programacion", "Algo mas" ,"otra cosa mas", "otra cosa mas 4"]
         }
     ],

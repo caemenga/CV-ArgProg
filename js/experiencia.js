@@ -1,15 +1,13 @@
 
 document.addEventListener("DOMContentLoaded", showProfeciones);
 let index = 0;
-
- 
 let btnSig = document.querySelector("#btn-sig");
 let btnAnt = document.querySelector("#btn-ant");
 btnSig.addEventListener('click', siguiente);
 btnAnt.addEventListener('click', anterior);
 
 async function showProfeciones(){
-    let res = await fetch(`./js/json/base-de-datos.json`)
+    let res = await fetch(url)
     if (res.ok){
         content = await res.json();
     }else{
