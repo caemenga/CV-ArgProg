@@ -5,11 +5,13 @@
 body{
     display: grid;
     gap: 10px;
+    background-image: url(../images/fondo2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 header{
     height: 200px;
     width: 100%;
-    background-color: antiquewhite;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -42,7 +44,6 @@ header h1{
 }
 
 .experiencia{
-    background-color: blue;
     display: flex;
     flex-direction: column;
     /*
@@ -50,41 +51,18 @@ header h1{
     width: 100%;
     */
 }
-th{
-    background-color: green;
-}
-td{
-    background-color: yellow;
-    height: 10px;
-    width: 100%;
-}
-table{
-    background-color: red;
-    height: 100%;
+.botones{
+    display: flex;
+    justify-content:space-between;
 }
 
-.habilidades{
-    background-color: red;
-    /*
-    height: 150px;
-    width: 100%;
-    */
-}
-.habilidades table{
-    height: auto;
-}
-.educacion{
-    background-color: green;
-    /*
-    height: 150px;
-    width: 100%;
-    */
-}
 div h2{
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 0px 0px 10px;
 }
 footer{
+    padding-top: 5%;
+    float: inline-end;
     height: 100px;
     width: 100%;
 }

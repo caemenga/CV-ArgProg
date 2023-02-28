@@ -20,5 +20,20 @@
             "tareas": ["programacion", "Algo mas" ,"otra cosa mas", "otra cosa mas 4"]
         }
     ],
-    "educacion": "nada por ahora"
+    "educacion": [{
+        "institucion": "Escuela de Educacion Tecnica",
+        "titulo": "Tecnico Electromecanico",
+        "periodo": "2008 / 2014"
+    },
+    {
+        "institucion": "Univesidad Nacional De la Plata",
+        "titulo": "Licenciatura en Periodismo",
+        "periodo": "2014 / 2020"
+    },
+    {
+        "institucion": "Universidad Nacional del Centro de La Provincia de Buenos Aires",
+        "titulo": "Ingeniero en Sistemas",
+        "periodo": "2020/2025 (en progreso)"
+    }
+    ]
 }

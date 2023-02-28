@@ -15,21 +15,18 @@ async function showProfeciones(){
     }else{
         console.log(error);
     }
-    console.log(content)
     llenarExperiencias(content.experiencia);
 
 }
 function llenarExperiencias(data){
-    console.log(data);
     let lista = document.querySelector("#ulExperiencias");
-    console.log(index);
-    
-        lista.innerHTML = `<li>  
-                                <td> <p> Empresa: ${data[index].empresa} </p> </td>
-                                <td> <p> Cargo: ${data[index].cargo} </p>  </td> 
-                                <td> <p> Periodo: ${data[index].periodo} </p>  </td> 
-                                <td> <p> Tareas: ${data[index].tareas} </p>  </td>
-                            </li>`  ;
+    if(index > data.length-1){
+        index = data.length-1;
+    }
+        lista.innerHTML =   `<li class="list-group-item"><p> Empresa: ${data[index].empresa} </p></li>
+                            <li class="list-group-item"><td> <p> Cargo: ${data[index].cargo} </p></li> 
+                            <li class="list-group-item"><td> <p> Periodo: ${data[index].periodo} </p></li> 
+                            <li class="list-group-item"><td> <p> Tareas: ${data[index].tareas} </p>  </li>`;
     
 }
 
