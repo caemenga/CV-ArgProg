@@ -1,18 +1,21 @@
 "use strict";
 document.addEventListener("DOMContentLoaded", showInfo);
-
+/**
+ * Muestra informacion personal en el index
+ */
 async function showInfo(){
     let res = await fetch('https://randomuser.me/api/');
     if(res.ok){
         let content = await res.json();
         console.log(content.results);
-        llenarInfoPersonal(content.results);
+        completarInfoPersonal(content.results);
+        completarHeader(content.results);
     }else{
         console.log(error);
     }
 }
-
-function llenarInfoPersonal(data){
+//Completa la tabla
+function completarInfoPersonal(data){
     let lista = document.querySelector("#ulInfoPersonal");
     let titulo = document.querySelector("#titulo");
     let imagen = document.querySelector("#imagen");
@@ -26,4 +29,11 @@ function llenarInfoPersonal(data){
     titulo.innerHTML = data[0].name.first + " " + data[0].name.last;
     imagen.src = data[0].picture.medium;
 
+}
+
+function completarHeader(data){
+    let titulo = document.querySelector("#titulo");
+    let imagen = document.querySelector("#imagen");
+    titulo.innerHTML = data[0].name.first + " " + data[0].name.last;
+    imagen.src = data[0].picture.medium;
 }

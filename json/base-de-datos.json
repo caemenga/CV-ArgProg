@@ -1,23 +1,23 @@
 {
-    "habilidades": ["panificados", "cocina", "limpieza"],
+    "habilidades": ["HTML", "CSS", "JAVASCRIPT", "SQL", "GIT", "WordPress"],
     "experiencia":[
         {
             "empresa": "Panaderia del sol",
             "cargo": "panadero",
             "periodo": "2020 / 2021",
-            "tareas": ["elaboracion de panificados", "pasteleria" ,"tareas de mantenimiento"]
+            "tareas": [" elaboracion de panificados", " pasteleria" ," tareas de mantenimiento"]
         },
         {
-            "empresa": "El Jardiin",
-            "cargo": "sonido",
+            "empresa": "El Jardin Producciones",
+            "cargo": "Operador",
             "periodo": "2021 / 2022",
-            "tareas": ["Armado de sonido", "Etc" ,"otra cosa"]
+            "tareas": [" armado de sonido", " operador de consola" ," tareas de electricidad"]
         },
         {
-            "empresa": "globant",
-            "cargo": "programador",
+            "empresa": "Globant",
+            "cargo": "Lider de proyecto",
             "periodo": "2023 / 2024",
-            "tareas": ["programacion", "Algo mas" ,"otra cosa mas", "otra cosa mas 4"]
+            "tareas": [" elaboracion de codigo"," genstion de proyectos", " distribucion de tareas"]
         }
     ],
     "educacion": [{

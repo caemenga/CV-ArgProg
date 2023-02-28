@@ -4,7 +4,9 @@ let i = 0;
 const url = `./json/base-de-datos.json`;
 
 
-
+/**
+ * Muestra las habilidades en el index
+ */
 async function showHabilidades(){
     let res = await fetch(url);
     if(res.ok){
@@ -14,7 +16,7 @@ async function showHabilidades(){
        document.querySelector("#ulHabilidades").innerHTML = "error al cargar los datos";
     } 
    }
-
+//completa la tabla habilidades
 async function llenarTabla(data){
         let lista = document.querySelector("#ulHabilidades");
         let contenedorbtn = document.querySelector("#btn-hab-edu");
@@ -28,7 +30,9 @@ async function llenarTabla(data){
         contenedorbtn.innerHTML = `<button id="btn-educacion" type="button" class="btn btn-outline-primary">Ver Educacion</button>`;
         asociarEventos();
 }
-
+/**
+ * muestra la educacion en el index
+ */
 async function showEducacion(){
     let res = await fetch(url);
     if(res.ok){
@@ -37,7 +41,7 @@ async function showEducacion(){
         completarLista(content.educacion);
     }
 }
-
+//completa lista educacion
 function completarLista(data){
     let lista = document.querySelector("#ulHabilidades");
     let contenedorbtn = document.querySelector("#btn-hab-edu");
@@ -57,7 +61,7 @@ function completarLista(data){
     asociarEventos();
 }
 
-
+//asocia eventos en los botones de la lista
 function asociarEventos(){
 let btnHabilidades = document.querySelector("#btn-habilidades");
 let btnEducacion = document.querySelector("#btn-educacion");
@@ -68,7 +72,7 @@ btnEducacion?.addEventListener('click', showEducacion);
 anterior?.addEventListener('click', anteriorEdu);
 siguiente?.addEventListener('click', siguienteEdu);
 }
-
+//Funciones para cambiar de pagina
 function siguienteEdu(){
     i++;
     showEducacion();
