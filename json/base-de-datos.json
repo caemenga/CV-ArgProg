@@ -1,17 +1,17 @@
 {
-    "habilidades": ["HTML", "CSS", "JAVASCRIPT", "SQL", "GIT", "WordPress"],
+    "habilidades": ["HTML", "CSS", "JAVASCRIPT", "GIT", "Organizacion", "Responsable"],
     "experiencia":[
         {
-            "empresa": "Panaderia del sol",
-            "cargo": "panadero",
+            "empresa": "McDonald",
+            "cargo": "atencion al publico",
             "periodo": "2020 / 2021",
-            "tareas": [" elaboracion de panificados", " pasteleria" ," tareas de mantenimiento"]
+            "tareas": [" venta", " facturacion" ]
         },
         {
-            "empresa": "El Jardin Producciones",
-            "cargo": "Operador",
+            "empresa": "Golden Bar",
+            "cargo": "encargada",
             "periodo": "2021 / 2022",
-            "tareas": [" armado de sonido", " operador de consola" ," tareas de electricidad"]
+            "tareas": [" atencion de clientes", " gestion de productos" ," organizacion del lugar"]
         },
         {
             "empresa": "Globant",

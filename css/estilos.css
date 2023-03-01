@@ -42,6 +42,9 @@ header{
     display: flex;
     justify-content:space-around;
 }
+ul{
+    width: auto;
+}
 footer{
     padding-top: 5%;
     float: inline-end;
@@ -49,6 +52,9 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.contenedor-carta{
+    align-items: center;
 }
 
 /* Fuentes*/
@@ -66,6 +72,10 @@ div h2{
     font-family: 'Courier New', Courier, monospace;
     padding: 10px 0px 0px 10px;
 }
+.p-carta{
+    padding-left: 10px;
+}
+
 
 /*Imagen*/
 header img{

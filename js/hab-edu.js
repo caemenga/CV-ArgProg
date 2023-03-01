@@ -27,7 +27,7 @@ async function llenarTabla(data){
             lista.innerHTML += `<li class="list-group-item"> ${data[index]} </li>`;
         }
         
-        contenedorbtn.innerHTML = `<button id="btn-educacion" type="button" class="btn btn-outline-primary">Ver Educacion</button>`;
+        contenedorbtn.innerHTML = `<button id="btn-educacion" type="button" class="btn btn-outline-dark">Ver Educacion</button>`;
         asociarEventos();
 }
 /**
@@ -53,7 +53,7 @@ function completarLista(data){
     lista.innerHTML = `<li class="list-group-item"><p> Institucion: ${data[i].institucion}</p></li>
                         <li class="list-group-item"><p> Titulo: ${data[i].titulo}</p></li>
                         <li class="list-group-item"><p> Periodo: ${data[i].periodo}</p></li>`;
-    contenedorbtn.innerHTML =`<button id="btn-habilidades" type="button" class="btn btn-outline-primary">Ver Habilidades</button>
+    contenedorbtn.innerHTML =`<button id="btn-habilidades" type="button" class="btn btn-outline-dark">Ver Habilidades</button>
                               <div class="btn-hab-eu">
                               <button id="ant-edu" type="button" class="btn btn-outline-dark btnedu">⇐</button>
                               <button id="sig-edu" type="button" class="btn btn-outline-dark btnedu">⇒</button>

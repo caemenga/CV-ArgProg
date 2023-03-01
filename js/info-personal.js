@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", showInfo);
  * Muestra informacion personal en el index
  */
 async function showInfo(){
-    let res = await fetch('https://randomuser.me/api/');
+    let res = await fetch('https://randomuser.me/api/?nat=mx&seed=82');
     if(res.ok){
         let content = await res.json();
-        console.log(content.results);
+        console.log(content);
         completarInfoPersonal(content.results);
         completarHeader(content.results);
     }else{
@@ -28,7 +28,6 @@ function completarInfoPersonal(data){
                        <li><p> Celular: ${data[0].cell}</p></li> `;
     titulo.innerHTML = data[0].name.first + " " + data[0].name.last;
     imagen.src = data[0].picture.medium;
-
 }
 
 function completarHeader(data){
