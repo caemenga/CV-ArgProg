@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", showInfo);
  * Muestra informacion personal en el index
  */
 async function showInfo(){
-    let res = await fetch('https://randomuser.me/api/?nat=mx&seed=82');
+let res = await fetch('https://randomuser.me/api/?nat=mx&seed=81');
     if(res.ok){
         let content = await res.json();
         console.log(content);
